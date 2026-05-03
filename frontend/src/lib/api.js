@@ -1,4 +1,4 @@
-const BASE = "https://ajai-production.up.railway.app";
+const BASE = import.meta.env.VITE_API_URL || 'https://ajai-production.up.railway.app/api';
 
 function getToken() {
   return localStorage.getItem('token');
